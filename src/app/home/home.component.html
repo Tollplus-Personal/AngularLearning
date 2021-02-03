@@ -1,0 +1,16 @@
+<h1>Welcome</h1>
+<div><b> OneWayDataBinding</b></div>
+<div class="play-container">
+  <p>
+    Launch Me <span (click)="countClick()"> 🚀 </span>&nbsp;
+    {{ clickCounter }} times.
+  </p>
+</div>
+
+<div><b> TwoWayDataBinding</b></div>
+<div class="play-container">
+  <p>
+    <input type="text" [(ngModel)]="name" /><br />
+    <strong>You said: </strong>{{ name }}
+  </p>
+</div>
